@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CesiBike Configuration</title>
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <strong>
+                <a href="../accueil/index.html">Accueil</a>
+                <a href="../configuration/index.html">Configuration</a>
+                <a href="../visualisation/ensemble/index.html">Visualisation</a>
+            </strong>
+        </nav>
+
+        <h1>Configuration des postes</h1>
+        <p>Paramétrage de la ligne de production CesiBike</p>
+    </header>
+
+
+    <main>
+
+
+        <section class="card">
+            <h2>Configuration générale</h2>
+
+
+            <form>
+
+                <label for="nbPostes">
+                    Nombre de postes de travail :
+                </label>
+                <input type="number" id="nbPostes" min="1" value="3">
+
+                <button type="button">
+                    Valider le nombre de postes
+                </button>
+
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Poste 1</h2>
+
+
+            <label for="etapesPoste1">
+                Nombre d'étapes :
+            </label>
+            <input type="number" id="etapesPoste1" min="1" value="2">
+
+            <h3>Stock initial</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom de la pièce</th>
+                        <th>Quantité initiale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>VIS XR33</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Pédalier VR12</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="button">
+                Générer le fichier Poste1_stock.csv
+            </button>
+        </section>
+
+        <section class="card info">
+            <p>
+                Les données saisies sur cette page seront utilisées pour générer
+                des fichiers CSV correspondant à chaque poste et à chaque étape.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CesiBike. Tous droits réservés</p>
+    </footer>
+
+</body>
+
+</html>

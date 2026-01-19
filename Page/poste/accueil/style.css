@@ -1,0 +1,44 @@
+header,
+footer {
+    text-align: center;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+body {
+    background-color: #397ABF;
+}
